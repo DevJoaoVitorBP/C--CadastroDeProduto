@@ -7,10 +7,12 @@ namespace Cadastro_Produto
     {
         static void Main(string[] args)
         {
+            // Lista de produtos
             List<Produto> produtos = new List<Produto>();
             int opcao = 0;
             do
             {
+                // Menu
                 Console.WriteLine("1 - Cadastrar");
                 Console.WriteLine("2 - Listar");
                 Console.WriteLine("3 - Atualizar");
@@ -37,20 +39,20 @@ namespace Cadastro_Produto
                             Console.WriteLine("Nome do produto: " + p.Nome + "\nPreço: " + p.Preco + "\nId: " + p.Id);
                         }
                         break;
-                    // Atualizar
+                    // Atualizar utilizando a referencia o Id
                     case 3:
                         Console.WriteLine("Digite a Id do produto: ");
                         int idAtualizar = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Digite o nome do produto");
-                        string nomeAtualizar = Console.ReadLine();
-                        Console.WriteLine("Digite o preço do produto");
-                        float precoAtualizar = float.Parse(Console.ReadLine());
                         foreach (Produto p in produtos)
                         {
                             if (p.Id == idAtualizar)
                             {
-                                p.Nome = nomeAtualizar;
-                                p.Preco = precoAtualizar;
+                                Console.WriteLine("Digite o nome do produto: ");
+                                p.Nome = Console.ReadLine();
+                                Console.WriteLine("Digite o preço do produto: ");
+                                p.Preco = float.Parse(Console.ReadLine());
+                                Console.WriteLine("Digite a ID do produto: ");
+                                p.Id = int.Parse(Console.ReadLine());
                             }
                         }
                         break;
@@ -78,6 +80,7 @@ namespace Cadastro_Produto
         }
     }
 
+    // Criando a calsse produto
     class Produto
     {
         public string Nome { get; set; }
