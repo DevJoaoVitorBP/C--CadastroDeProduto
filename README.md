@@ -1,5 +1,4 @@
 
-```markdown
 # Cadastro de Produtos
 
 Este é um programa simples de cadastro de produtos em C#. Ele permite que você cadastre, liste, atualize e delete produtos em uma lista.
