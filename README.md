@@ -12,7 +12,7 @@ Antes de executar o programa, certifique-se de ter o ambiente de desenvolvimento
 1. Clone este repositório para o seu computador usando o seguinte comando:
 
    ```bash
-   git clone https://github.com/seu-usuario/Cadastro_Produto.git
+   git clone https://github.com/Joao-Pereira013/C--CadastroDeProduto.git
    ```
 
 2. Navegue até o diretório do projeto:
